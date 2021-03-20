@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Gintama, Manga, Anime, Dragon Ball, Naruto, Japon, Drole, Fun">
+	<meta name="description" content="Site pour les fans de la série Gintama ou les personnes s'y interessant">
+	<meta name="author" content="Safouane EL MCHANTEF">
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<title>Gintama</title>
+	
+</head>
+<!--On met une classe sur le body pour pouvoir changer de background selon la page-->
+	<body class="pagecont">
+
+		<!-- On retrouve dans le header tout le menu ainsi que le logo-->
+		<header class="header">
+			<a href="../index.html" title="Logo" ><img  class="logo" src="../img/gintamalogoopti.png" alt="Gintama Logo"></a>
+
+			<!-- La div Navigation utilisée pour donner une couleur au background -->
+			<div class="Navigation">
+
+				<div id="hamburger">
+					<!--Div qui sert de "pointeur" pour remplir le #hamburger-sidebar -->
+					<div id="hamburger-content">
+
+						<!-- Tout le menu et le sous-menu-->
+						<nav class="menu">
+						  <ul>
+						  	<li><a href="../index.html" class="acc underline">Accueil</a></li>
+						    <li><a  href="saisons.html" class="underline">Présentation</a>
+						      <ul class="sous">
+						        <li><a href="saisons.html">Saisons</a></li>
+						        <li><a href="references.html">Les références</a></li>
+						      </ul>
+						    </li>
+						    <li><a href="personnages.html" class="underline">Personnages</a>
+						      <ul class="sous">
+						        <li><a href="personnages.html">Présentation des personnages</a></li>
+						        <li><a href="inspi.html">Inspirations des personnages</a></li>
+						      </ul>
+						    </li>
+						    <li><a href="hideaki.html" class="active underline">Les créateurs</a>
+						      <ul class="sous">
+						        <li><a href="hideaki.html">Hideaki Sorachi</a></li>
+						        <li><a href="shueisha.html">La Shueisha</a></li>
+						        <li><a href="sunrise.html" class="sousact">Studio Sunrise </a></li>
+						      </ul>
+						    </li>
+						    <li><a href="ost.html" class="underline">Médias</a>
+						      <ul class="sous">
+						        <li><a href="ost.html">OST</a></li>
+						        <li><a href="openings.html">Openings</a></li>
+						      </ul>
+						    </li>
+						    <li><a href="quizz.html" class="underline">Quizz</a>
+						    	<ul class="sous">
+						    		<li><a href="quizz.html">Quizz sur la série</a></li>
+						    	</ul>
+						    </li>
+						    <li><a href="contact.html" class="underline">Contact</a>
+						    	<ul class="sous">
+						    		<li><a href="contact.html">Nous contacter</a></li>
+						    	</ul>
+						    </li>
+						  </ul>
+						</nav>
+					</div>
+
+					<!-- Le bouton du menu burger et sa forme-->
+					<button id="hamburger-button">&#9776;</button>
+					<!--L'endroit où apparaitra le menu et sous-menu lorsque l'on clique sur le bouton burger-->
+					<div id="hamburger-sidebar">
+						<div id="hamburger-sidebar-header"></div>
+						<div id="hamburger-sidebar-body"></div>
+					</div>
+					<!-- Un calque pour rendre le contenu de fond plus sombre-->
+					<div id="hamburger-overlay"></div>
+				</div>
+			</div>
+
+		</header>
+		<section>
+			<h1>Studio Sunrise et équipe de production</h1>
+
+			<!--une image à gauche le texte à droite-->
+			<div class="boite1">
+				<img id="bat" src="../img/sunriseop.jpg" alt="Batiment Studio Sunrise" title="Batiment Studio Sunrise">
+				<br>
+				<p>Sunrise Inc. est un studio d'animation japonaise, fondé en septembre 1972 et filiale depuis 1994 de <a href="https://fr.wikipedia.org/wiki/Bandai">Bandai</a>.
+				<br>
+				<br>
+				Le studio a produit et animé de nombreuses séries comme <a href="https://fr.wikipedia.org/wiki/Nicky_Larson_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e_d%27animation)">Nicky Larson</a>, <a href="https://fr.wikipedia.org/wiki/Vision_d%27Escaflowne">Vision d'Escaflowne</a>, <a href="https://fr.wikipedia.org/wiki/Cowboy_Bebop">Cowboy Bebop</a>, <a href="https://fr.wikipedia.org/wiki/Inu-Yasha">Inu-Yasha</a>, <a href="https://fr.wikipedia.org/wiki/Code_Geass">Code Geass</a> mais est aussi à l'origine de la grande saga des <a href="https://fr.wikipedia.org/wiki/Gundam">Gundam</a>.</p>
+			</div>
+			<br>
+
+			<!--Figure où l'on met le logo du studio-->
+			<figure id="sunrise">
+				<img src="../img/sunriseop.png" alt="Logo Sunrise" title="Logo Sunrise">
+				<figcaption>Logo du Studio Sunrise</figcaption>
+			</figure>
+			<br>
+			<br>
+			<h2>Membres du studio</h2>
+			<br>
+
+			<!--On fait une liste où l'on énnumère tous les membres-->
+			<ul id="membre">
+				<li>Yasunao Aoki, réalisateur</li>
+				<li><a href="https://fr.wikipedia.org/wiki/Gor%C5%8D_Taniguchi" title="Gorō Taniguchi">Gorō Taniguchi</a>, réalisateur </li>
+				<li><a href="https://fr.wikipedia.org/wiki/Yoshiyuki_Tomino" title="Yoshiyuki Tomino">Yoshiyuki Tomino</a>, réalisateur </li>
+				<li>Mitsuo Fukuda, réalisateur </li>
+				<li><a href="https://fr.wikipedia.org/wiki/Shinichir%C5%8D_Watanabe" title="Shinichirō Watanabe">Shinichirō Watanabe</a>, réalisateur </li>
+				<li><a href="https://fr.wikipedia.org/wiki/Hisashi_Hirai" title="Hisashi Hirai">Hisashi Hirai</a>, chara-designer </li>
+				<li><a href="https://fr.wikipedia.org/wiki/Shuk%C5%8D_Murase" title="Shukō Murase">Shukō Murase</a>, réalisateur </li>
+				<li><a href="https://fr.wikipedia.org/wiki/Yoshikazu_Yasuhiko" title="Yoshikazu Yasuhiko">Yoshikazu Yasuhiko</a>, chara-designer </li>
+				<li><a href="https://fr.wikipedia.org/wiki/Ichir%C5%8D_%C5%8Ckouchi" title="Ichirō Ōkouchi">Ichirō Ōkouchi</a> </li>
+				<li>Toshihiro Kawamoto, chara-designer, directeur de l'animation</li>
+				<li>Hajime Yatate</li>
+			</ul>
+			<br>
+			<br>
+			<h2>Anime phares</h2>
+			<br>
+
+			<!--3 Figures alignées avec leur légende-->
+			<div id="phare">
+				<figure id="nicky">
+					<img src="../img/nickyopti.jpg" alt="Nicky Larson" title="Nicky Larson">
+					<figcaption>Nicky Larson c'est 140 épisodes (subdivisés en quatre arcs de 51, 63, 13 et 13 épisodes) de 25 minutes (version française : 20 à 22 minutes) par le studio.</figcaption>
+					<br>
+					<br>
+				</figure>
+				<figure id="Cowboy">
+					<img src="../img/cowboyopti.jpg" alt="Cowboy Bebop" title="Cowboy Bebop">
+					<figcaption>Cowboy Bebop est une série télévisée d'animation japonaise de 26 épisodes créée en 1998 par Sunrise et réalisée par Shin'ichirō Watanabe.</figcaption>
+					<br>
+					<br>
+				</figure>
+				<figure id="Code Geass">
+					<img src="../img/codegeassopti.jpg" alt="Code Geass" title="Code Geass">
+					<figcaption>Code Geass: Lelouch of the Rebellion est une série d'animation japonaise créée par le studio.</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<!-- Script pour afficher le menu et la sidebar lorsque l'on clique sur le bouton burger-->
+		<script type="text/javascript">
+			var content = document.querySelector('#hamburger-content');
+			var sidebarBody = document.querySelector('#hamburger-sidebar-body');
+			var button = document.querySelector('#hamburger-button');
+			var overlay = document.querySelector('#hamburger-overlay');
+			var activatedClass = 'hamburger-activated';
+			var hamburger = document.querySelector('#hamburger');
+
+			sidebarBody.innerHTML = content.innerHTML;
+
+			button.addEventListener('click', function(e){
+				e.preventDefault();
+				this.parentNode.classList.toggle(activatedClass);
+			});
+
+			overlay.addEventListener('click', function(e){
+				e.preventDefault();
+
+				this.parentNode.classList.remove(activatedClass);
+			});
+
+		</script>
+
+		<!--Footer avec le nom et prénom du développeur, la matière et l'année-->
+		<footer>
+			<p><a href="mailto:safouane.el_mchantef@utt.fr">© EL MCHANTEF Safouane &nbsp&nbsp-&nbsp &nbspMM01 &nbsp&nbsp-&nbsp &nbsp2020</a></p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,745 @@
+@charset "utf-8";
+
+
+*
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+  font-family: calibri,arial;
+}
+
+/*Les fonds changent selon les pages on attibue alors une classe (on aurait pu mettre un ID) à chaque page*/
+.page1{
+	background: url(../img/backgroundopti.jpg) no-repeat fixed;
+	background-size:cover;
+}
+.page2{
+	background: url(../img/fondpageopti.jpg) no-repeat fixed;
+	background-size:cover;
+}
+.page25{
+	background: url(../img/refopti.jpg) no-repeat fixed;
+	background-size:cover;
+}
+.page3{
+	background: url(../img/backgroundpersoopti.jpg) no-repeat fixed;
+	background-size:cover;
+}
+.page5{
+	background: url(../img/backopti.jpg) no-repeat fixed;
+	background-size:cover;
+}
+
+.page6{
+	background: url(../img/shueishaopti.jpg) no-repeat fixed;
+	background-size:cover;
+}
+.pagecont{
+	background: url(../img/contopti.jpg) no-repeat fixed;
+	background-size:cover;
+}
+
+/*Toutes les images auront la même largeur ainsi qu'une bordure*/
+img{
+	width: 15.625em
+}
+.page3 img{
+    border: solid 0.7em #DCDDDE;
+}
+
+img, iframe{
+	border: solid 0.7em #DCDDDE; 
+}
+/*Le header et le footer prennent toute la largeur de l'écran et la couleur demandée par le client*/
+header{
+	width: 100%;
+	background-color: #DCDDDE;
+	display: inline-block;
+	border-bottom: solid 1px black;  
+}
+footer{
+	background-color: #DCDDDE;
+	width: 100%;
+	border-top: solid 1px black;
+	height: 1.5em;
+	padding: 0.2em;
+}
+/*La taille du texte et son emplacement dans le footer*/
+footer p{
+	text-align: center;
+	font-size: 1em;
+}
+/*Taille du logo Gintama*/
+header img{
+	width: 8em;
+}
+
+/*La section ne dépasse pas 1280px*/
+body{
+	max-width: 1280px;
+	margin: auto;
+}
+
+/*La navigation*/
+nav{
+	float: right; 
+	width: 100%;
+	position: sticky;
+}
+
+/*Pas de puces*/
+nav ul {
+	list-style: none;
+	
+}
+
+#mangas ul{
+	list-style: none;
+}
+
+/*Chaque catégorie prend 13% de la largeur du menu*/
+.menu li {
+	float:left;
+	position: relative;
+	width:13%;
+}
+
+/*Style des catégories*/
+.menu a {
+	background: #B5B4BC;
+	color: #000000;
+	display: block;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	border:solid 1px black;
+
+}
+
+/*Lorsque l'on survole les sous-menu le background change de couleur*/
+.menu .sous li:hover a, .menu li.acc:hover{
+	background: #B0D7FF;
+	color:white;
+}
+
+/*On n'affiche pas les sous menu par défaut*/
+.sous {
+	position: absolute;
+	display: none;
+}
+/*On les affiche quand on survole les catégories*/
+li:hover ul.sous {
+	opacity: 1;
+	top: 2.5em;	
+	display: block;
+	width: 100%;
+}
+
+/*Les sous-menus prennent la largeur des catégories*/
+.sous li {
+	float: none;
+	width: 100%;
+}
+
+/*Tout le menu est contenu dans 85% du header*/
+.Navigation{
+	float: right;
+	width: 85%;
+	margin-top: 2em;
+}
+/*La section est un cadre de couleur #F2F2F2 ayant 70% de la largeur, et centré sur l'écran*/
+section{
+	width: 70%;
+	margin: auto;
+	background-color: #F2F2F2;
+	padding: 20px;
+	overflow: auto;
+}
+
+/*Les séparations*/
+/*De 3.2px de haut et courbé de 5px, la couleur utilisée est un gris foncé*/
+hr{
+	height: 0.2em;
+	border-radius: 5px;
+	background-color: #414655;
+}
+
+/*Les titres et textes*/
+/*Les titres principaux sont centrés et de taille 3em*/
+h1{
+	text-align: center;
+	font-size: 3em;
+}
+
+/*Les titres secondaires sont de taille 2em, en gras et de la même couleur que les séparations*/
+h2{
+	font-size: 2em;
+	font-weight: bold;
+	color: #414655;
+}
+
+/*Les textes sont justifiés*/
+p{
+	text-align: justify;
+}
+
+/*La couleur des liens est bleu très clair, il n'y a pas de soulignement*/
+a{
+	color: #77B6EA;
+	text-decoration: none;
+}
+
+/*On éclaircit la couleur des liens lors du survol*/
+section a:hover{
+	color: #B0D7FF;
+}
+
+/*Ces classe créent une boite de toute la largeur de la section*/
+.cont1{
+	width: 100%;
+	overflow: auto;
+}
+div.cont2, div.cont3{
+	width: 100%;
+	overflow: auto;
+}
+
+/*La vidéo YouTube flotte à gauche avec 1em de marge par rapport au bord et prend 50% de la section*/
+.op9{
+	float: left;
+	margin-right: 1em;
+	width: 50%;
+}
+
+/*Dans ces div on met les titres secondaires au milieu*/
+.cont2 h2,.cont3 h2{
+	text-align: center;
+}
+
+/*une div qui met l'image à droite*/
+.droite{
+	float: right;
+	width: 30%;
+	margin-left: 1em;
+}
+/*Les boutons*/
+/*On arrondit les bords, augmente la marge intérieur, la marge exterieure gauche et la taille/couleur de la police*/
+.boutton{
+	float: center;
+	border-radius: 0.3em;
+	border:solid #414655 1px;
+	padding: 0.6em;
+	font-size: 1.5em;
+	background-color: #DCDDDE;
+	margin-left: 25%;
+	color: #77B6EA;
+}
+/*On donne une largeur de 30%, le bouton est centré*/
+button{
+	width: 30%;
+	margin: auto;
+}
+/*La taille des propositions de réponse au Quizz sont de taille 1.5em*/
+label{
+	font-size: 1.5em;
+}
+
+/*Animation de zoom*/
+/*La transition dure 0.5 secondes*/
+.perso{
+	transition: transform 0.5s;
+    margin-right: 2em;
+}
+/*Lorsque l'on survole une image elle s'agrandit de x1.05*/
+.perso:hover{
+	transform: scale(1.05);
+}
+
+/*L'image flotte à gauche dans cette div*/
+.boite1 img{
+	float: left;
+}
+
+/*Les pages à l'écran prennent un arrière plan moins foncé que la catégorie, le texte prend la couleur blanche*/
+li .sousact{
+	background-color: #676d80;
+	color: white;
+}
+
+/*On donne les propriétées d'un titre secondaire (class utilisée dans des Span)*/
+.nom{
+	font-size: 2em;
+	font-weight: bold;
+	color: #414655;
+}
+
+/*Pas de dépassement de contenu de la div et marge intérieure de 1em*/
+.boite1{
+	overflow: auto;
+	padding: 1em;
+}
+.boite2{
+	overflow: auto;
+	padding: 1em;
+}
+/*On place le texte au milieu de la div*/
+.boite1 p{
+	vertical-align: middle;
+}
+
+/*On place la div à droite avec une marge exterieure gauche de 2em*/
+.shin{
+	float: right;
+	margin-left: 2em;
+}
+
+/*L'image est au centre*/
+#Sorachi{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15.625em; 
+}
+/*Les images de cette div sont au centre*/
+#mangas img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15.625em;
+}
+/*Marge gauche de 1em*/
+#bat,#Jump,.photo{
+	margin-right: 1em;
+}
+
+/*On met 3 images cotes à cotes dans cette div*/
+div #phare{
+	width: 100%;
+	display: inline-block;
+}
+/*On donne alors la 33,33% de largeur à chacune des images*/
+#phare figure{
+	float: left;
+	margin:auto;
+	width: 33.33%;
+}
+
+/*Le texte est centré les bordures doublées*/
+#phare figcaption{
+	text-align: center;
+	border:double;
+	padding: 1em;
+	margin:1em; 
+}
+
+/*Le logo sunrise est au centre, il est ici considéré comme du texte*/
+figure{
+	text-align: center;
+}
+/*Une simple marge exterieur gauche de 1em*/
+#membre li,#ref{
+	margin-left: 2em;
+}
+
+/*On précise la taille (hauteur et largeur)pour les vidéos Youtube car elles prennent les valeurs par défaut d'une vidéo YouTube*/
+#ost iframe,.ost iframe{
+  width: 90%;
+  height: 20em;
+}
+
+/*On affiche ces vidéos sous forme de grille de 2 colonnes chacune occupant 50%, l'écart entre les vidéos est de 3em*/
+#ost,.ost{
+	display: grid;
+	grid-template-columns: repeat(2,50%);
+	grid-gap: 3em;
+}
+/*Les dimensions par défaut de la zone de commentaire*/
+#msg{
+	width: 100%;
+	height: 20em;
+	padding: 1em;
+}
+/*Le menu burger*/
+
+/*Le contenu du menu burger s'affiche en ligne*/
+#hamburger, #hamburger-content{
+	display: inline;
+}
+
+/*Le bouton du menu flotte à gauche (pas affiché en version Desktop), prend en tout 15% de largeur, a une taille de 4em, et est aligné sur le haut, une transition durera 0.5 secondes lorsque l'on cliquera dessus*/
+#hamburger-button{
+	background: none;
+	border: none;
+	font-size: 4em;
+	padding: 0;
+	vertical-align: top;
+	line-height: 47px;
+	float: left;
+	width: 15%;
+	display: none;
+	transition: background 0.5s;
+}
+
+/*Lorsque l'on clique sur le bouton la div "hamburger" obtient cette div, elle se deplace alors de 20px sur la droite*/
+#hamburger-button .activatedClass{
+	transform: translateX(-20px;);
+}
+
+/*Un masque noir d'opacité 0.4 est placé sur la page lorsque l'on appuie sur le bouton burger, dans la version Desktop il n'est pas affiché*/
+#hamburger-overlay{
+	position: fixed;
+	z-index: 10;
+	top: 6.15em;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, 0.5);
+	display: none;
+}
+
+/*La sidebar est le conteneur contenant tout le menu, il est situé tout à gauche de l'écran on ne peut pas le voir*/
+#hamburger-sidebar{
+	display: none;
+	position: fixed;
+	width: 50%;
+	z-index: 20;
+	height: 100%;
+	top:6.17em;
+	left: 0;
+	border-top: solid;
+	border-bottom: solid;
+	background-color: #DCDDDE;
+	transform: translateX(-100%);
+	transition: transform .2s ease-out;
+}
+
+/*Le menu sera affiché en bloc*/
+#hamburger-sidebar li{
+	display: block;
+	float: none;
+}
+
+/*Marge interieur de 1em en haut et 0.5em à droite*/
+#hamburger-sidebar-body{
+	padding: 16px 8px;
+}
+
+/*La page active change de couleur de fond*/
+.menu li .active{
+	background:#414655;
+	color: white;
+	font-weight: bold;
+}
+#cont{
+	float: left;
+}
+#tete{
+	float: right;
+	width: 50%;
+}
+/*Animation de soulignement lors d'un survol d'une catégorie, celle-ci dure 0.6 secondes*/
+.underline{
+  position: relative;
+}
+
+.underline::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 3px;
+  background-color: #B0D7FF;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+
+/*Partie responsive tablette*/
+@media screen and (max-width: 768px) and (min-width: 426px){
+
+	/*Sur tablette la section prend toute la largeur de l'écran*/
+	section{
+		width: 100%;
+	}
+
+	/*De même pour le header, celui-ci reste fixé sur l'écran*/
+	header{
+		width: 100%;
+		position: fixed;
+	}
+
+	/*Une marge exterieur haute de 2em*/
+	h1{
+		margin-top: 2em;
+	}
+	/*On retire le fond d'écran*/
+	body{
+		background-image: none;
+	}
+
+	/*On n'affiche pas le contenu du menu tant que la class hamburger-activated n'existe pas*/
+	#hamburger-content{
+		display: none;
+	}
+
+	/*L'overlay et la sidebar sont affichés lorsque l'on clique sur le bouton*/
+	#hamburger-button,.hamburger-activated #hamburger-overlay{
+		display: block;
+		float: left;
+		width: 100%;
+	}
+	#hamburger-sidebar{
+		width: 80%;
+		height: 90%;
+		display: block;
+		float: left;
+		overflow-y: scroll;
+	}
+
+	/*Le logo Gintama est placé au centre du header*/
+	img.logo{
+		margin-left: auto;
+		margin-right:auto;
+		display: block;
+	}
+
+	/*La div Navigation fera 10% de largeur pour tenir sur la même ligne que le logo*/
+	.Navigation{
+		width: 10%;
+		float: left;
+		position: absolute;
+		top: 0;
+		margin-left: 1em;
+	}
+
+	/*On faut apparaitre la sidebar lorsque la class hamburger-activated existe*/
+	.hamburger-activated #hamburger-sidebar{
+		transform: translateX(0);
+	}
+
+	/*Les catégories des menus prennent toute la largeur de la sidebar*/
+	.menu li {
+		float:left;
+		width:100%;
+		position: relative;
+	}
+
+
+	/*On affiche directement les sous-menus*/
+	ul.sous{
+		opacity: 1;
+		display: block;
+		width: 100%;
+		z-index: 20;
+		position: relative;
+		margin-bottom: 1em;
+	}
+
+	/*Les sous-menus sont d'une couleur différente pour les différencier des catégories */
+	.sous a{
+		background: #B0D7FF;
+		color: black;;
+		width: 100%;
+		display: block;
+	}
+
+	.menu{
+		vertical-align: middle;
+	}
+	.menu .sousact{
+		background-color: #676d80;
+		color: white;
+	}
+
+	/*L'écran étant plus petit on agrandit la taille des catégories et de la police*/
+	.Navigation a{
+		height: 3em;
+		font-size: 2em;
+	}
+	.menu li:hover ul{
+		top: 0px;
+	}
+
+	/*L'accueil est un peu plus éloigné du reste car il s'agit de la page principale*/
+	.acc{
+		margin-bottom: 1em;
+		}
+}
+	
+/*Partie Responsive smartphone*/
+@media only screen and (max-width:425px){
+
+	/*La section prend toute la largeur de l'écran également sur smartphone*/	
+	section{
+		width: 100%;
+	}
+	header{
+		width: 100%;
+		position: fixed;
+	}
+	h1{
+		margin-top: 2em;
+	}
+	body{
+		background-image: none;
+	}
+
+	/*Partie menu burger similaire à la version tablette*/
+	#hamburger-content{
+		display: none;
+	}
+
+	/*La sidebar prend 100% de la largeur*/
+	#hamburger-sidebar,.hamburger-activated #hamburger-overlay{
+		display: block;
+		float: left;
+		overflow-y: scroll;
+		width: 100%;
+	}
+
+	/*Même propriétés que le bouton burger de la version tablette*/
+	#hamburger-button{
+		display: block;
+		float: left;
+		font-size: 4em;
+	}
+
+	/*On ne prend pas toute la hauteur de l'écran, car on pourra sortir du menu en appuyant sur l'arrière plan*/
+	#hamburger-sidebar{
+		height: 80%;
+	}
+
+	/*On affiche tous les sous-menus directement*/
+	ul.sous{
+		opacity: 1;
+		display: block;
+		width: 100%;
+		z-index: 20;
+		position: relative;
+		margin-bottom: 1em;
+
+	}
+
+	/*Les pages à l'écran prennent un arrière plan moins foncé que la catégorie, le texte prend la couleur blanche*/
+	.menu .sousact{
+		background-color: #676d80;
+		color: white;
+	}
+	/*On change la couleur des sous-menus pour ne pas confondre avec la catégorie*/
+	.sous a{
+		background: #B0D7FF;
+		color: black;
+		width: 100%;
+		display: block;
+	}
+
+	/*La taille des catégorie et sous-menus augmente car l'écran est plus petit*/
+	.Navigation a{
+		height: 3.5em;
+		font-size: 2em;
+	}
+	.menu li:hover ul{
+		top: 0px;
+	}
+
+	/*Le logo est au centre du header*/
+	img.logo{
+		margin-left: auto;
+		margin-right:auto;
+		display: block;
+	}
+
+	/*La div navigation prend toute la largeur de l'écran et flotte à gauche*/
+	.Navigation{
+		width: 100%;
+		overflow: none;
+		float: left;
+		position: absolute;
+		top: 0;
+
+	}
+
+	/*On fait glisser la sidebar de la droite vers la gauche, on rajoute une ombre*/
+	.hamburger-activated #hamburger-sidebar{
+		transform: translateX(0);
+		box-shadow: 0px -5px 5px 0px inset rgba(0,0,0,0.4);
+
+	}
+
+	/*Les catégories prennent toute la largeur de la sidebar*/
+	.menu li {
+		float:left;
+		width:100%;
+		position: relative;
+	}
+
+	/*La vidéo YouTube prend toute la largeur*/
+	.op9{
+		width: 100%;
+	}
+
+	/*On retire toutes les propriétés flottantes des images*/
+	.cont1 iframe{
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	/*La div reprend sa taille par defaut, on évite le scroll dans une div seule ainsi*/
+	div.cont2, div.cont3{
+		width: 100%;
+		overflow: visible;
+	}
+
+	/*Les images de ces div reprennent une taille adaptée à la section*/
+	.cont2 img, .cont3 img{
+		width: 15.625em;
+	}
+
+	/*On retire le flottement de toutes ces images*/
+	.boite1 .kagura,.cont2 img,.cont3 img,.shin,#shin,#Kondo,#Hijikata,#Sougo,#katsura,#Elizabeth,#Takasugi,#Hasegawa,#gin,.boite1 .photo,#bat,#Jump{
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+	}
+
+	/*Les éléments précedement en ligne reviennent en colonnes*/
+	#phare figure{
+		width: 100%;
+		margin-right:1em; 
+		display: block;
+	}
+
+	/*Le lecteur soundcloud prend toute la largeur de l'écran*/
+	.boite2 iframe{
+		width: 100%;
+	}
+
+	/*Les vidéos YouTubes précedement affichées en grille s'affichent en bloc*/
+	#ost,.ost{
+		display: block;
+		text-align: center;
+	}
+
+	/*Chaque vidéo est espacée de 1em par rapport aux autres*/
+	#ost iframe,.ost iframe{
+		margin-bottom: 1em;
+	}
+	.acc{
+		margin-bottom: 1em;
+	}
+
+}

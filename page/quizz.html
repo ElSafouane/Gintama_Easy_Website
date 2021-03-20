@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Gintama, Manga, Anime, Dragon Ball, Naruto, Japon, Drole, Fun">
+    <meta name="description" content="Site pour les fans de la série Gintama ou les personnes s'y interessant">
+    <meta name="author" content="Safouane EL MCHANTEF">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <title>Gintama</title>
+    
+</head>
+<!--On met une classe sur le body pour pouvoir changer de background selon la page-->
+    <body class="pagecont">
+
+        <!-- On retrouve dans le header tout le menu ainsi que le logo-->
+        <header class="header">
+            <a href="../index.html" title="Logo" ><img  class="logo" src="../img/gintamalogoopti.png" alt="Gintama Logo"></a>
+
+            <!-- La div Navigation utilisée pour donner une couleur au background -->
+            <div class="Navigation">
+
+                <div id="hamburger">
+                    <!--Div qui sert de "pointeur" pour remplir le #hamburger-sidebar -->
+                    <div id="hamburger-content">
+
+                        <!-- Tout le menu et le sous-menu-->
+                        <nav class="menu">
+                          <ul>
+                            <li><a href="../index.html" class="acc underline">Accueil</a></li>
+                            <li><a  href="saisons.html" class="underline">Présentation</a>
+                              <ul class="sous">
+                                <li><a href="saisons.html">Saisons</a></li>
+                                <li><a href="references.html">Les références</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="personnages.html" class="underline">Personnages</a>
+                              <ul class="sous">
+                                <li><a href="personnages.html">Présentation des personnages</a></li>
+                                <li><a href="inspi.html">Inspirations des personnages</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="hideaki.html" class="underline">Les créateurs</a>
+                              <ul class="sous">
+                                <li><a href="hideaki.html">Hideaki Sorachi</a></li>
+                                <li><a href="shueisha.html">La Shueisha</a></li>
+                                <li><a href="sunrise.html">Studio Sunrise</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="ost.html" class="underline">Médias</a>
+                              <ul class="sous">
+                                <li><a href="ost.html">OST</a></li>
+                                <li><a href="openings.html">Openings</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="quizz.html" class="active underline">Quizz</a>
+                                <ul class="sous">
+                                    <li><a href="quizz.html" class="sousact">Quizz sur la série</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html" class="underline">Contact</a>
+                                <ul class="sous">
+                                    <li><a href="contact.html">Nous contacter</a></li>
+                                </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Le bouton du menu burger et sa forme-->
+                    <button id="hamburger-button">&#9776;</button>
+                    <!--L'endroit où apparaitra le menu et sous-menu lorsque l'on clique sur le bouton burger-->
+                    <div id="hamburger-sidebar">
+                        <div id="hamburger-sidebar-header"></div>
+                        <div id="hamburger-sidebar-body"></div>
+                    </div>
+                    <!-- Un calque pour rendre le contenu de fond plus sombre-->
+                    <div id="hamburger-overlay"></div>
+                </div>
+            </div>
+
+        </header>
+		<section>
+			<h1>Quizz</h1>
+			<br>
+			<br>
+
+            <!--On crée un formulaire-->
+        	<form id="form1">
+
+                <!--Cette div est utilisée pour mettre l'image à droite et le texte à gauche-->
+                <div class="boite2"><h2>Comment s'appelle le personnage principal de l'anime ?</h2>
+                	<br>
+                    <img class="shin" src="../img/gintokiopti.jpg" alt="Gintoki">
+                    <br>
+
+                    <!--La bonne réponse sera le premier bouton radio, il a la valeur 1-->
+                    <label for="var_string"><input type="radio" name="variable" value="1" id="var_string"/> Gintoki</label>
+
+                    <br>
+                    <br>
+                    <!--On donne la valeur 0 aux mauvaises réponses-->
+                    <label for="var_join"><input type="radio" name="variable" value="0" id="var_join"/> Gintama</label>
+
+                    <br>
+                    <br>
+
+                    <label for="var_info"><input type="radio" name="variable" value="0" id="var_info"/> Goku</label>
+
+                    <br>
+                    <br>
+
+                    <label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition"/> Shinpachi</label>
+                </div>
+
+                <!--Une autre question-->
+                <div class="boite2">
+                    <h2>Laquelle de ces inspirations est celle ayant servie la création de Shinpachi ?</h2>
+                    <br>
+                    <img class="shin" src="../img/shinpachiopti.jpg" alt="Image">
+                    <br>
+                    <br>
+                    <label for="sub_string"><input type="radio" name="sub" value="1" id="sub_string"/> Shinpachi Nagakura</label>
+                    <br>
+                    <br>
+                    <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/> Shinpachi Uzumaki</label>
+                    <br>
+                    <br>
+                    <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" /> Shinpachi Joestar</label>
+                    <br>
+                    <br>
+                    <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" /> Shinpachi Monkey D.</label>
+                </div>
+                    <br>
+                    <br>
+
+                <div class="boite2">
+
+                    <h2>De quel opening s'agit-il ?</h2>
+                    <br>
+
+                    <!--Intégration d'un son Soundcloud-->
+                    <iframe width="30%" class="shin" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/194031642&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                    <br>
+                    <label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" /> Opening 1</label>
+                    <br>
+                    <br>
+                    <label for="cat_join"><input type="radio" name="con" value="0" id="cat_join" /> Opening 3</label>
+                    <br>
+                    <br>
+                    <label for="cat_info"><input type="radio" name="con" value="1" id="cat_info" /> Opening 9</label>
+                    <br>
+                    <br>
+                    <label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" /> Opening 19</label>
+                    <br>
+                    <br>
+                </div>
+
+                <div class="boite2">
+                    <h2>Qui est-ce ?</h2>
+                    <br>
+                    <img class="shin" src="../img/elizabethopti.jpg" alt="Image">
+                    <br>
+                    <label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" /> Katsura</label>
+                    <br>
+                    <br>
+                    <label for="if_join"><input type="radio" name="ifstate" value="1" id="if_join" /> Elizabeth</label>
+                    <br>
+                    <br>
+                    <label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" /> Goku</label>
+                    <br>
+                    <br>
+                    <label for="if_condition"><input type="radio" name="ifstate"  value="0" id="if_condition" /> Joseph</label>
+                    <br>
+                    <br>
+                </div>
+                <br>
+
+                <!--Le bouton pour soumettre ses réponses-->
+                <button class="boutton" type="submit" value="Submit">Valider</button>
+                <br>
+            </form>
+            <br>
+
+            <!--Dans l'élément ayant pour id grade on y intégrera le score-->
+            <p><span class="nom">Ton score : </span><span class="nom" id="grade">__</span> /4</p>
+            <br>
+             <center><p><span class="nom" id="phrase"></span></p></center>
+            <p id="grade2"></p>
+
+            <!--Script pour calculer les points obtenus au quizz-->
+            <script>
+                document.getElementById("form1").onsubmit=function() {
+                    variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+                    sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+                    con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+                    ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+
+                    //On additionne toutes les bonnes réponses
+                    result = variable + sub + con + ifstate;
+                    
+                    document.getElementById("grade").innerHTML = result;
+
+                    //Si le résultat est 4 on affiche la phrase "Bravo vous sauverez la Terre des Amanto"
+                    if (result==4) {
+                    	document.getElementById("phrase").innerHTML = "Bravo tu sauveras la Terre des Amantos !";
+                    }
+                    //Sinon selon les scores on affiche les phrases suivantes:
+                    else if (result==3){
+                        document.getElementById("phrase").innerHTML ="Tu y es presque entraîne-toi encore un peu !"
+                    }
+                    else if(result==2){
+                        document.getElementById("phrase").innerHTML ="Je ne pense pas que le combat soit fait pour toi..."
+                    }
+                    else if(result==1){
+                        document.getElementById("phrase").innerHTML ="Aïe... remballes ton sabre."
+                    }
+                    else if(result==0){
+                        document.getElementById("phrase").innerHTML ="C'était pour rire là non ?"
+                    }
+
+                    return false;
+                }
+
+            </script>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+            <!-- Script pour afficher le menu et la sidebar lorsque l'on clique sur le bouton burger-->
+            <script type="text/javascript">
+                var content = document.querySelector('#hamburger-content');
+                var sidebarBody = document.querySelector('#hamburger-sidebar-body');
+                var button = document.querySelector('#hamburger-button');
+                var overlay = document.querySelector('#hamburger-overlay');
+                var activatedClass = 'hamburger-activated';
+                var hamburger = document.querySelector('#hamburger');
+
+                sidebarBody.innerHTML = content.innerHTML;
+
+                button.addEventListener('click', function(e){
+                    e.preventDefault();
+                    this.parentNode.classList.toggle(activatedClass);
+                });
+
+                overlay.addEventListener('click', function(e){
+                    e.preventDefault();
+
+                    this.parentNode.classList.remove(activatedClass);
+                });
+
+            </script>
+        </section>
+       <!--Footer avec le nom et prénom du développeur, la matière et l'année-->
+    	<footer>
+    		<p><a href="mailto:safouane.el_mchantef@utt.fr">© EL MCHANTEF Safouane - MM01 - 2020</a></p>
+    	</footer>
+    </body>
+</html>
